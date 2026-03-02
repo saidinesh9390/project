@@ -462,7 +462,7 @@ function renderMealCard(meal, mtype, dayIdx) {
         </div>
         <div class="meal-footer">
           <span class="meal-price">₹${meal.price}/serving</span>
-          <div class="meal-tags">${tagHTML}<span class="knn-tag">🤖 KNN</span></div>
+          
         </div>
       </div>
     </div>
