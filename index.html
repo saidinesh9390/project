@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri – Smart Diet Recommendation System</title>
+    <meta name="description"
+        content="diet recommendation system with BMR/TDEE calculation, meal planning, KNN-based food recommendations, and weekly progress tracking." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="15" stroke="url(#grad1)" stroke-width="2" />
+                    <path d="M10 22 Q16 8 22 22" stroke="url(#grad2)" stroke-width="2.5" fill="none"
+                        stroke-linecap="round" />
+                    <circle cx="16" cy="13" r="3" fill="url(#grad1)" />
+                    <defs>
+                        <linearGradient id="grad1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00d4aa" />
+                            <stop offset="1" stop-color="#7c3aed" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00d4aa" />
+                            <stop offset="1" stop-color="#7c3aed" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span class="nav-title"></span>
+        </div>
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="profile" onclick="switchTab('profile')">
+                <span class="tab-icon">👤</span> Profile
+            </button>
+            <button class="nav-tab" data-tab="plan" onclick="switchTab('plan')">
+                <span class="tab-icon">🥗</span> Meal Plan
+            </button>
+            <button class="nav-tab" data-tab="progress" onclick="switchTab('progress')">
+                <span class="tab-icon">📊</span> Progress
+            </button>
+            <button class="nav-tab" data-tab="feedback" onclick="switchTab('feedback')">
+                <span class="tab-icon">💬</span> Feedback
+            </button>
+        </div>
+        <div class="nav-badge">
+            <span class="ai-badge"></span>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="heroSection">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge"></div>
+            <h1 class="hero-title"><br /><span class="gradient-text">Smart Diet Plan</span></h1>
+            <p class="hero-subtitle">Personalized meal recommendations based on your health metrics, lifestyle, and
+                goals. Adapted weekly with machine learning.</p>
+            <div class="hero-stats">
+                <div class="stat-pill">🧬 BMR/TDEE Calculated</div>
+                <div class="stat-pill">🩺 Health Condition Aware</div>
+                <div class="stat-pill">🎯 Goal-Oriented</div>
+                <div class="stat-pill">💰 Budget Friendly</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOD PHOTO STRIP ===== -->
+    <div class="food-strip" aria-hidden="true">
+        <div class="food-strip-item fs-1"></div>
+        <div class="food-strip-item fs-2"></div>
+        <div class="food-strip-item fs-3"></div>
+        <div class="food-strip-item fs-4"></div>
+        <div class="food-strip-item fs-5"></div>
+        <div class="food-strip-item fs-6"></div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-container">
+
+        <!-- ===== TAB: PROFILE ===== -->
+        <section class="tab-section active" id="tab-profile">
+            <div class="section-header">
+                <h2 class="section-title">🧬 User Health Profile</h2>
+                <p class="section-sub">Fill in your details to generate a personalized diet plan</p>
+            </div>
+
+            <div class="profile-grid">
+
+                <!-- Personal Info Card -->
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">👤</span>
+                        <h3>Personal Information</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input type="text" id="userName" class="form-input" placeholder="Enter your name" />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="userAge">Age (years)</label>
+                            <input type="number" id="userAge" class="form-input" placeholder="25" min="10" max="100" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userGender">Gender</label>
+                            <select id="userGender" class="form-select">
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="userHeight">Height (cm)</label>
+                            <input type="number" id="userHeight" class="form-input" placeholder="170" min="100"
+                                max="250" />
+                        </div>
+                        <div class="form-group">
+                            <label for="userWeight">Weight (kg)</label>
+                            <input type="number" id="userWeight" class="form-input" placeholder="70" min="20"
+                                max="300" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goals & Activity Card -->
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">🎯</span>
+                        <h3>Goals & Activity</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="activityLevel">Activity Level</label>
+                        <select id="activityLevel" class="form-select">
+                            <option value="">Select</option>
+                            <option value="sedentary">Sedentary (little or no exercise)</option>
+                            <option value="light">Lightly Active (1–3 days/week)</option>
+                            <option value="moderate">Moderately Active (3–5 days/week)</option>
+                            <option value="very">Very Active (6–7 days/week)</option>
+                            <option value="extra">Extra Active (physical job)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userGoal">Health Goal</label>
+                        <select id="userGoal" class="form-select">
+                            <option value="">Select</option>
+                            <option value="lose">Lose Weight</option>
+                            <option value="maintain">Maintain Weight</option>
+                            <option value="gain">Gain Muscle</option>
+                            <option value="health">Improve Overall Health</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="userBudget">Weekly Food Budget (₹)
+                            <span class="budget-hint-tag">approximate</span>
+                        </label>
+                        <!-- Preset tier buttons -->
+                        <div class="budget-presets" id="budgetPresets">
+                            <button type="button" class="budget-tier" data-val="700" onclick="setBudget(700,   this)">🟢
+                                Economy<br /><small>~₹700/wk</small></button>
+                            <button type="button" class="budget-tier" data-val="1500"
+                                onclick="setBudget(1500,  this)">🔵 Standard<br /><small>~₹1,500/wk</small></button>
+                            <button type="button" class="budget-tier active" data-val="2500"
+                                onclick="setBudget(2500,  this)">🟣 Comfortable<br /><small>~₹2,500/wk</small></button>
+                            <button type="button" class="budget-tier" data-val="5000"
+                                onclick="setBudget(5000,  this)">🟡 Premium<br /><small>~₹5,000/wk</small></button>
+                        </div>
+                        <!-- Editable amount field -->
+                        <div class="budget-input-row">
+                            <span class="budget-rupee">₹</span>
+                            <input type="number" id="userBudget" class="form-input budget-field" placeholder="2500"
+                                min="500" max="20000" value="2500" oninput="clearBudgetActive()" />
+                            <span class="budget-period">/week</span>
+                        </div>
+                        <p class="budget-desc" id="budgetDesc">Comfortable meals: includes variety proteins, dairy &amp;
+                            fresh produce</p>
+                    </div>
+                </div>
+
+                <!-- Diet Preferences Card -->
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">🥗</span>
+                        <h3>Diet Type</h3>
+                    </div>
+                    <div class="toggle-group" id="dietTypeGroup">
+                        <label class="toggle-label">
+                            <input type="radio" name="dietType" value="vegetarian" />
+                            <span class="toggle-btn">🌱 Vegetarian</span>
+                        </label>
+                        <label class="toggle-label">
+                            <input type="radio" name="dietType" value="nonveg" />
+                            <span class="toggle-btn">🍗 Non-Vegetarian</span>
+                        </label>
+                        <label class="toggle-label">
+                            <input type="radio" name="dietType" value="mixed" checked />
+                            <span class="toggle-btn">🍱 Mixed</span>
+                        </label>
+                    </div>
+                    <div class="card-header" style="margin-top: 1.5rem;">
+                        <span class="card-icon">⚙️</span>
+                        <h3>Food Preferences</h3>
+                    </div>
+                    <div class="checkbox-grid" id="foodPrefsGroup">
+                        <label class="check-label">
+                            <input type="checkbox" value="lowcarb" />
+                            <span class="check-btn">🌾 Low Carb</span>
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" value="highprotein" />
+                            <span class="check-btn">💪 High Protein</span>
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" value="lowfat" />
+                            <span class="check-btn">🫒 Low Fat</span>
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" value="diabetic" />
+                            <span class="check-btn">🩺 Diabetic Friendly</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Medical Conditions Card -->
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">🏥</span>
+                        <h3>Medical Conditions</h3>
+                    </div>
+                    <p class="card-desc">Select any conditions to filter meal recommendations accordingly</p>
+                    <div class="condition-grid" id="conditionsGroup">
+                        <label class="condition-label">
+                            <input type="checkbox" value="diabetes" />
+                            <span class="condition-btn">🩸 Diabetes</span>
+                        </label>
+                        <label class="condition-label">
+                            <input type="checkbox" value="hypertension" />
+                            <span class="condition-btn">❤️ Hypertension</span>
+                        </label>
+                        <label class="condition-label">
+                            <input type="checkbox" value="cholesterol" />
+                            <span class="condition-btn">🫀 High Cholesterol</span>
+                        </label>
+                        <label class="condition-label">
+                            <input type="checkbox" value="thyroid" />
+                            <span class="condition-btn">🦋 Thyroid</span>
+                        </label>
+                        <label class="condition-label">
+                            <input type="checkbox" value="pcos" />
+                            <span class="condition-btn">🌸 PCOS</span>
+                        </label>
+                        <label class="condition-label">
+                            <input type="checkbox" value="ibs" />
+                            <span class="condition-btn">🫃 IBS</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div><!-- end profile-grid -->
+
+            <!-- Generate Button -->
+            <div class="generate-section">
+                <button class="generate-btn" id="generateBtn" onclick="generatePlan()">
+                    <span class="btn-icon">🤖</span>
+                    <span class="btn-text">Generate Diet Plan</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+                <p class="generate-hint">Our KNN algorithm will analyze 500+ food items to build your plan</p>
+            </div>
+
+        </section>
+
+        <section class="tab-section" id="tab-plan">
+            <div id="planContent">
+                <div class="empty-state">
+                    <div class="empty-icon">🥗</div>
+                    <h3>No Plan Generated Yet</h3>
+                    <p>Go to Profile tab, fill in your details and click <strong>Generate Diet Plan</strong></p>
+                    <button class="outline-btn" onclick="switchTab('profile')">← Go to Profile</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TAB: PROGRESS ===== -->
+        <section class="tab-section" id="tab-progress">
+            <div class="section-header">
+                <h2 class="section-title">📊 Weekly Progress Tracker</h2>
+                <p class="section-sub">Update your current metrics to adapt your plan each week</p>
+            </div>
+            <div class="progress-grid">
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">⚖️</span>
+                        <h3>Log Today's Weight</h3>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="logWeight">Current Weight (kg)</label>
+                            <input type="number" id="logWeight" class="form-input" placeholder="70" step="0.1" />
+                        </div>
+                        <div class="form-group">
+                            <label for="logDate">Date</label>
+                            <input type="date" id="logDate" class="form-input" />
+                        </div>
+                    </div>
+                    <button class="primary-btn" onclick="logProgress()">📅 Log Entry</button>
+                </div>
+
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">📈</span>
+                        <h3>Progress Overview</h3>
+                    </div>
+                    <canvas id="progressChart" width="400" height="220"></canvas>
+                </div>
+
+                <div class="card card-glow span-full">
+                    <div class="card-header">
+                        <span class="card-icon">🗓️</span>
+                        <h3>Progress Log</h3>
+                    </div>
+                    <div id="progressLog" class="progress-log">
+                        <p class="empty-log">No entries yet. Start logging your weight!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TAB: FEEDBACK ===== -->
+        <section class="tab-section" id="tab-feedback">
+            <div class="section-header">
+                <h2 class="section-title">💬 Weekly Feedback & Adaptation</h2>
+                <p class="section-sub">Rate your meals to help the Aadapt your recommendations</p>
+            </div>
+            <div class="feedback-grid">
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">⭐</span>
+                        <h3>Rate This Week's Plan</h3>
+                    </div>
+                    <div class="star-rating" id="starRating">
+                        <button class="star" data-val="1" onclick="setRating(1)">★</button>
+                        <button class="star" data-val="2" onclick="setRating(2)">★</button>
+                        <button class="star" data-val="3" onclick="setRating(3)">★</button>
+                        <button class="star" data-val="4" onclick="setRating(4)">★</button>
+                        <button class="star" data-val="5" onclick="setRating(5)">★</button>
+                    </div>
+                    <div class="form-group" style="margin-top:1rem">
+                        <label for="feedbackText">Comments & Preferences</label>
+                        <textarea id="feedbackText" class="form-input" rows="4"
+                            placeholder="Tell us what you liked, disliked, or want to change..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Meals to avoid next week</label>
+                        <div id="avoidMeals" class="avoid-grid"></div>
+                    </div>
+                    <button class="primary-btn" onclick="submitFeedback()">🔄 Adapt My Plan</button>
+                </div>
+
+                <div class="card card-glow">
+                    <div class="card-header">
+                        <span class="card-icon">📋</span>
+                        <h3>Feedback History</h3>
+                    </div>
+                    <div id="feedbackHistory" class="feedback-history">
+                        <p class="empty-log">No feedback submitted yet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== LOADING OVERLAY ===== -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-card">
+            <div class="ai-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring ring-2"></div>
+                <div class="spinner-core">🤖</div>
+            </div>
+            <h3 id="loadingText">Initializing AI Engine...</h3>
+            <div class="loading-steps" id="loadingSteps">
+                <div class="load-step active" id="step1">✓ Calculating BMR & TDEE</div>
+                <div class="load-step" id="step2">⏳ Applying KNN Algorithm</div>
+                <div class="load-step" id="step3">⏳ Filtering Health Conditions</div>
+                <div class="load-step" id="step4">⏳ Building 7-Day Meal Plan</div>
+                <div class="load-step" id="step5">⏳ Optimizing Budget</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TOAST NOTIFICATION ===== -->
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1247 @@
+[
+    {
+        "id": 1,
+        "name": "Oats Porridge",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 250,
+        "prot": 8,
+        "carb": 42,
+        "fat": 5,
+        "fiber": 6,
+        "price": 30,
+        "photo": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Boiled Eggs (2)",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 155,
+        "prot": 13,
+        "carb": 1,
+        "fat": 11,
+        "fiber": 0,
+        "price": 20,
+        "photo": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "breakfast",
+            "snack"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Whole Wheat Toast + Peanut Butter",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 320,
+        "prot": 12,
+        "carb": 38,
+        "fat": 14,
+        "fiber": 4,
+        "price": 35,
+        "photo": "p.jpeg",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Greek Yogurt + Berries",
+        "cat": "dairy",
+        "type": "veg",
+        "cal": 180,
+        "prot": 15,
+        "carb": 22,
+        "fat": 3,
+        "fiber": 3,
+        "price": 60,
+        "photo": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast",
+            "snack"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Idli Sambar (4 pcs)",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 280,
+        "prot": 8,
+        "carb": 52,
+        "fat": 3,
+        "fiber": 3,
+        "price": 40,
+        "photo": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Besan Chilla",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 230,
+        "prot": 11,
+        "carb": 28,
+        "fat": 7,
+        "fiber": 5,
+        "price": 30,
+        "photo": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Poha with Veggies",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 260,
+        "prot": 6,
+        "carb": 48,
+        "fat": 5,
+        "fiber": 2,
+        "price": 25,
+        "photo": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Paneer Bhurji (low-oil)",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 290,
+        "prot": 18,
+        "carb": 6,
+        "fat": 15,
+        "fiber": 1,
+        "price": 70,
+        "photo": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "breakfast",
+            "lunch"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Banana Oat Smoothie",
+        "cat": "fruit",
+        "type": "veg",
+        "cal": 280,
+        "prot": 9,
+        "carb": 52,
+        "fat": 4,
+        "fiber": 4,
+        "price": 50,
+        "photo": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "breakfast",
+            "snack"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Moong Dal Chilla",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 220,
+        "prot": 13,
+        "carb": 30,
+        "fat": 4,
+        "fiber": 6,
+        "price": 30,
+        "photo": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "diabetic",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Avocado Toast",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 310,
+        "prot": 8,
+        "carb": 34,
+        "fat": 16,
+        "fiber": 7,
+        "price": 90,
+        "photo": "https://images.unsplash.com/photo-1541519227354-08fa5d50c820?w=600&q=80&fit=crop",
+        "tags": [
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Sprouts Salad",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 170,
+        "prot": 12,
+        "carb": 28,
+        "fat": 1,
+        "fiber": 8,
+        "price": 25,
+        "photo": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast",
+            "snack"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Chicken Omelette",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 340,
+        "prot": 28,
+        "carb": 3,
+        "fat": 20,
+        "fiber": 0,
+        "price": 80,
+        "photo": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Dalia Upma",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 240,
+        "prot": 7,
+        "carb": 44,
+        "fat": 3,
+        "fiber": 5,
+        "price": 25,
+        "photo": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Fruit Bowl (Seasonal)",
+        "cat": "fruit",
+        "type": "veg",
+        "cal": 150,
+        "prot": 2,
+        "carb": 38,
+        "fat": 0.5,
+        "fiber": 4,
+        "price": 40,
+        "photo": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "lowcarb"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "breakfast",
+            "snack"
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Dal Tadka + Brown Rice",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 420,
+        "prot": 18,
+        "carb": 68,
+        "fat": 8,
+        "fiber": 8,
+        "price": 60,
+        "photo": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Grilled Chicken Salad",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 350,
+        "prot": 32,
+        "carb": 12,
+        "fat": 15,
+        "fiber": 4,
+        "price": 120,
+        "photo": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Rajma Chawal (low-oil)",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 480,
+        "prot": 20,
+        "carb": 78,
+        "fat": 6,
+        "fiber": 10,
+        "price": 55,
+        "photo": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Quinoa Veggie Bowl",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 380,
+        "prot": 14,
+        "carb": 58,
+        "fat": 9,
+        "fiber": 7,
+        "price": 100,
+        "photo": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "diabetic",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Fish Curry + Millet",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 450,
+        "prot": 35,
+        "carb": 42,
+        "fat": 12,
+        "fiber": 4,
+        "price": 130,
+        "photo": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Chole Bhature (small)",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 520,
+        "prot": 16,
+        "carb": 72,
+        "fat": 18,
+        "fiber": 8,
+        "price": 65,
+        "photo": "https://images.unsplash.com/photo-1626132647523-66c1f4a5b861?w=600&q=80&fit=crop",
+        "tags": [],
+        "diabetic": false,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Palak Paneer + Roti (2)",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 440,
+        "prot": 22,
+        "carb": 44,
+        "fat": 16,
+        "fiber": 5,
+        "price": 85,
+        "photo": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": true,
+        "hyp": false,
+        "chol": false,
+        "thyroid": false,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Egg Fried Rice (low-oil)",
+        "cat": "grain",
+        "type": "nonveg",
+        "cal": 400,
+        "prot": 18,
+        "carb": 58,
+        "fat": 10,
+        "fiber": 2,
+        "price": 75,
+        "photo": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Lentil Soup + Veggie Side",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 280,
+        "prot": 16,
+        "carb": 42,
+        "fat": 4,
+        "fiber": 10,
+        "price": 50,
+        "photo": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Grilled Paneer Tikka Bowl",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 390,
+        "prot": 24,
+        "carb": 28,
+        "fat": 18,
+        "fiber": 3,
+        "price": 110,
+        "photo": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Chicken Wrap (Whole Wheat)",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 430,
+        "prot": 30,
+        "carb": 44,
+        "fat": 12,
+        "fiber": 4,
+        "price": 100,
+        "photo": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Tofu Stir Fry + Brown Rice",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 370,
+        "prot": 18,
+        "carb": 52,
+        "fat": 9,
+        "fiber": 5,
+        "price": 90,
+        "photo": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Mix Veg Sabzi + Jowar Roti (2)",
+        "cat": "veg",
+        "type": "veg",
+        "cal": 320,
+        "prot": 9,
+        "carb": 56,
+        "fat": 6,
+        "fiber": 7,
+        "price": 50,
+        "photo": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Salmon Salad Bowl",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 410,
+        "prot": 38,
+        "carb": 14,
+        "fat": 20,
+        "fiber": 4,
+        "price": 180,
+        "photo": "https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Sambar + Steamed Rice",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 360,
+        "prot": 12,
+        "carb": 64,
+        "fat": 5,
+        "fiber": 8,
+        "price": 45,
+        "photo": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "lunch"
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Grilled Fish + Salad",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 320,
+        "prot": 36,
+        "carb": 8,
+        "fat": 14,
+        "fiber": 3,
+        "price": 140,
+        "photo": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 41,
+        "name": "Dal Khichdi (low ghee)",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 380,
+        "prot": 16,
+        "carb": 58,
+        "fat": 7,
+        "fiber": 8,
+        "price": 50,
+        "photo": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&fit=crop",
+        "tags": [
+            "diabetic",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Chicken Soup + Whole Grain Bread",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 350,
+        "prot": 28,
+        "carb": 30,
+        "fat": 10,
+        "fiber": 3,
+        "price": 100,
+        "photo": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Paneer Tikka Masala + Millet Roti",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 460,
+        "prot": 24,
+        "carb": 46,
+        "fat": 18,
+        "fiber": 4,
+        "price": 110,
+        "photo": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 44,
+        "name": "Stir-Fried Tofu + Veggies",
+        "cat": "protein",
+        "type": "veg",
+        "cal": 280,
+        "prot": 18,
+        "carb": 22,
+        "fat": 12,
+        "fiber": 6,
+        "price": 80,
+        "photo": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 45,
+        "name": "Egg Bhurji + 2 Rotis",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 380,
+        "prot": 22,
+        "carb": 36,
+        "fat": 14,
+        "fiber": 2,
+        "price": 60,
+        "photo": "https://images.unsplash.com/photo-1510693206972-df098062cb71?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Moong Dal Soup + Veggies",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 240,
+        "prot": 14,
+        "carb": 36,
+        "fat": 3,
+        "fiber": 9,
+        "price": 40,
+        "photo": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Baked Chicken + Sweet Potato",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 420,
+        "prot": 38,
+        "carb": 28,
+        "fat": 12,
+        "fiber": 4,
+        "price": 130,
+        "photo": "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein"
+        ],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Mushroom Quinoa Risotto",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 360,
+        "prot": 12,
+        "carb": 58,
+        "fat": 8,
+        "fiber": 5,
+        "price": 95,
+        "photo": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Tuna Salad Wrap",
+        "cat": "protein",
+        "type": "nonveg",
+        "cal": 330,
+        "prot": 30,
+        "carb": 26,
+        "fat": 10,
+        "fiber": 3,
+        "price": 120,
+        "photo": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Vegetable Stew + Brown Rice",
+        "cat": "veg",
+        "type": "veg",
+        "cal": 300,
+        "prot": 8,
+        "carb": 58,
+        "fat": 4,
+        "fiber": 7,
+        "price": 55,
+        "photo": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 51,
+        "name": "Palak Soup + Multigrain Bread",
+        "cat": "veg",
+        "type": "veg",
+        "cal": 250,
+        "prot": 9,
+        "carb": 34,
+        "fat": 7,
+        "fiber": 5,
+        "price": 65,
+        "photo": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "dinner"
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Roasted Chana",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 130,
+        "prot": 8,
+        "carb": 20,
+        "fat": 2,
+        "fiber": 5,
+        "price": 15,
+        "photo": "https://images.unsplash.com/photo-1567292941985-22d465fc8e7b?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 61,
+        "name": "Handful of Mixed Nuts",
+        "cat": "nut",
+        "type": "veg",
+        "cal": 180,
+        "prot": 5,
+        "carb": 8,
+        "fat": 16,
+        "fiber": 2,
+        "price": 40,
+        "photo": "https://images.unsplash.com/photo-1563412885-139e4dc1f1f3?w=600&q=80&fit=crop",
+        "tags": [
+            "lowcarb"
+        ],
+        "diabetic": true,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 62,
+        "name": "Apple + Peanut Butter",
+        "cat": "fruit",
+        "type": "veg",
+        "cal": 200,
+        "prot": 5,
+        "carb": 28,
+        "fat": 9,
+        "fiber": 4,
+        "price": 50,
+        "photo": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=600&q=80&fit=crop",
+        "tags": [],
+        "diabetic": false,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 63,
+        "name": "Whey Protein Shake",
+        "cat": "protein",
+        "type": "mixed",
+        "cal": 150,
+        "prot": 24,
+        "carb": 6,
+        "fat": 2,
+        "fiber": 0,
+        "price": 80,
+        "photo": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowcarb",
+            "lowfat"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 64,
+        "name": "Cucumber + Hummus",
+        "cat": "veg",
+        "type": "veg",
+        "cal": 110,
+        "prot": 4,
+        "carb": 14,
+        "fat": 5,
+        "fiber": 3,
+        "price": 40,
+        "photo": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&q=80&fit=crop",
+        "tags": [
+            "lowcarb",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 65,
+        "name": "Dark Chocolate (2 squares)",
+        "cat": "misc",
+        "type": "veg",
+        "cal": 100,
+        "prot": 1,
+        "carb": 12,
+        "fat": 6,
+        "fiber": 1,
+        "price": 30,
+        "photo": "https://images.unsplash.com/photo-1548907040-4baa42d10919?w=600&q=80&fit=crop",
+        "tags": [],
+        "diabetic": false,
+        "hyp": false,
+        "chol": false,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 66,
+        "name": "Buttermilk (low-fat)",
+        "cat": "dairy",
+        "type": "veg",
+        "cal": 60,
+        "prot": 4,
+        "carb": 8,
+        "fat": 0.5,
+        "fiber": 0,
+        "price": 15,
+        "photo": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "lowcarb",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 67,
+        "name": "Boiled Chickpeas Chaat",
+        "cat": "legume",
+        "type": "veg",
+        "cal": 160,
+        "prot": 9,
+        "carb": 26,
+        "fat": 2,
+        "fiber": 6,
+        "price": 25,
+        "photo": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80&fit=crop",
+        "tags": [
+            "highprotein",
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 68,
+        "name": "Rice Cakes + Avocado",
+        "cat": "grain",
+        "type": "veg",
+        "cal": 140,
+        "prot": 3,
+        "carb": 20,
+        "fat": 6,
+        "fiber": 3,
+        "price": 60,
+        "photo": "https://images.unsplash.com/photo-1541519227354-08fa5d50c820?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": true,
+        "meals": [
+            "snack"
+        ]
+    },
+    {
+        "id": 69,
+        "name": "Green Tea",
+        "cat": "beverage",
+        "type": "veg",
+        "cal": 5,
+        "prot": 0,
+        "carb": 1,
+        "fat": 0,
+        "fiber": 0,
+        "price": 10,
+        "photo": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&fit=crop",
+        "tags": [
+            "lowfat",
+            "lowcarb",
+            "diabetic"
+        ],
+        "diabetic": true,
+        "hyp": true,
+        "chol": true,
+        "thyroid": false,
+        "meals": [
+            "snack"
+        ]
+    }
+]
