@@ -59,7 +59,7 @@
         "fat": 14,
         "fiber": 4,
         "price": 35,
-        "photo": "p.jpeg",
+        "photo": "https://media.istockphoto.com/id/1168380232/photo/peanut-butter-scattered-on-a-slice-of-bread.webp?a=1&b=1&s=612x612&w=0&k=20&c=EiRxfR7bOj3VltNBfydeCIHN4hJA6fBbHKpGwbCaDks=",
         "tags": [
             "highprotein"
         ],
@@ -251,7 +251,7 @@
         "fat": 16,
         "fiber": 7,
         "price": 90,
-        "photo": "https://images.unsplash.com/photo-1541519227354-08fa5d50c820?w=600&q=80&fit=crop",
+        "photo": "https://plus.unsplash.com/premium_photo-1676106623583-e68dd66683e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QXZvY2FkbyUyMFRvYXN0fGVufDB8fDB8fHww",
         "tags": [
             "lowcarb"
         ],
@@ -494,7 +494,7 @@
         "fat": 18,
         "fiber": 8,
         "price": 65,
-        "photo": "https://images.unsplash.com/photo-1626132647523-66c1f4a5b861?w=600&q=80&fit=crop",
+        "photo": "https://media.istockphoto.com/id/533432934/photo/spicy-chick-peas-chola-masala-chana-masala-puri.jpg?s=612x612&w=0&k=20&c=N4n8UNEQ2WPeBbmRfFGHyR2CwRq9LAh89O-aqh08asI=",
         "tags": [],
         "diabetic": false,
         "hyp": false,
